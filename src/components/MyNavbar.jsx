@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from 'react-bootstrap';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Login from "../containers/Login"
 import Join from "../containers/Join"
@@ -20,18 +20,18 @@ const MyNavbar = () => {
           <Nav.Link href="/home">Home</Nav.Link>
           <Nav.Link href="#link">스케줄러 </Nav.Link>
           <NavDropdown title="회원관리" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#">
-              <Link to = "/join">회원가입</Link>
+            <NavDropdown.Item href="/join">
+              회원가입
               </NavDropdown.Item>
-            <NavDropdown.Item href="#">
-            <Link to = "/login">로그인</Link>
+            <NavDropdown.Item href="/login">
+            로그인
             </NavDropdown.Item>
-            <NavDropdown.Item href="#">
-            <Link to = "/mypage">마이페이지</Link>
+            <NavDropdown.Item href="/mypage">
+            마이페이지
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#">
-            <Link to = "/remove">회원탈퇴</Link>
+            <NavDropdown.Item href="/remove">
+            {/* <Link to = "/remove"> */}회원탈퇴{/* </Link> */}
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>

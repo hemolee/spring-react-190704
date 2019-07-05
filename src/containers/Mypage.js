@@ -11,16 +11,7 @@ class Mypage extends Component{
     }
     render(){
         return(
-            <div><Figure>
-            <Figure.Image
-              width={171}
-              height={180}
-              alt="171x180"
-              src={cat}            />
-            <Figure.Caption>
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </Figure.Caption>
-          </Figure>
+            <div><br></br>
           <Table striped bordered hover>
           
             <tbody>
