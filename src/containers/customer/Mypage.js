@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Figure,Table} from 'react-bootstrap'
-import cat from '../assets/images/cat.jpeg'
+import cat from '../../assets/images/cat.jpeg'
 
 class Mypage extends Component{
     constructor(props){
